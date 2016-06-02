@@ -1,0 +1,12 @@
+<h2>Add your doses and ingredients</h2>
+
+<%= form_for [@cocktail, @dose] do |f| %>
+<%= f.label :description %>
+<%= f.text_field :description %>
+<br>
+<%= f.label :ingredient %>
+   <%= f.collection_select :ingredient_id, Ingredient.all, :id, :name %> <br>
+<%= f.submit "add a dose"%>
+<% end %>
+
+
