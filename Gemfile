@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.3.0'
+gem 'figaro'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
 gem 'bootstrap-sass'
