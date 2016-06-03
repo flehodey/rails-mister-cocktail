@@ -1,9 +1,11 @@
 <h2> Fill in this form to create a new cocktail </h2>
 
-<%= form_for(@cocktail) do |f| %>
+<%= simple_form_for(@cocktail) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
 
 
 

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.3.0'
+gem 'carrierwave'
 gem 'figaro'
 gem 'cloudinary'
 gem 'rails_12factor', group: :production
