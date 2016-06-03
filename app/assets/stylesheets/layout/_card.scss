@@ -1,11 +1,19 @@
 .card {
-  background-color: #DEDFE0;
-  height:50px;
-  width: 100px;
-  padding: 20px;
-  margin:0 auto;
+    height: 168px;
+    width: 257px;
+    padding: 20px;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    color:white;
 }
 
 h2 {
   text-align: center;
+}
+
+.title_cocktail {
+
+  color: white;
 }

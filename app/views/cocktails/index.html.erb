@@ -14,9 +14,13 @@
 
     <% @cocktails.each do |cocktail|%>
     <div class="col-xs-12 col-sm-4 col-lg-4">
-    <div class= "card" >
-
+      <div class= "card" style="background-image:url('<%= image_path cocktail.photo%>');" >
+      <div class= "title_cocktail">
         <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        </div>
+        <%= link_to "Delete cocktail", cocktail_path(cocktail), method: :delete  %>
+
+
 
       </div>
     </div>
