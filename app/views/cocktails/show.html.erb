@@ -1,5 +1,8 @@
+
+<div class= "banner smaller" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path @cocktail.photo%>');" >
+</div>
+
 <h2>You can find more details about this cocktail</h2>
-<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
  <ul> <li>
     <%=@cocktail.name%>
 <% @cocktail.doses.each do |dose| %>
@@ -8,15 +11,14 @@
 
 <%= dose.description %>
 <%= dose.ingredient.name %>
-<%= link_to "Delete this ingredient", cocktail_dose_path(@cocktail,dose), method: :delete %>
+<%= link_to "Delete this ingredient", cocktail_dose_path(@cocktail,dose), method: :delete, class: "btn btn-danger btn-xs" %>
 </li>
 </ul>
 <% end %>
   </li>
 
 </ul>
+ <%= link_to "Add an ingrédient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+<%= link_to "back to cocktails", cocktails_path, class: "btn btn-primary" %>
 
-<%= link_to "back to cocktails", cocktails_path %>
-
-<%= link_to "Add a dose", new_cocktail_dose_path(@cocktail)  %>
 
