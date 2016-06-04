@@ -10,9 +10,9 @@
 //     position: relative;
 // }
 
-// h2 {
-//   text-align: center;
-// }
+h2 {
+  text-align: center;
+}
 
 
 // .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -41,6 +41,7 @@ a {   color: white;
   color: white;
   position: relative;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .card-user {
   position: absolute;
@@ -53,12 +54,12 @@ a {   color: white;
   font-size: 10px;
   text-transform: uppercase;
   bottom: 109px;
-  left: 117px;
+  left: 17px;
 }
 .card-description {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 100px;
+  left: 115px;
 }
 .card-description h2 {
   font-size: 24px;
