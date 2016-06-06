@@ -1,8 +1,10 @@
 <div class= "banner smaller" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path "cocktail.jpg"%>');" >
+
 </div>
 
 <h2> Fill in this form to create a new cocktail </h2>
-
+<div class="row">
+<div class = "col-md-6 col-md-offset-3">
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.label :name, class: "form-group form-control" %>
   <%= f.text_field :name, class: "form-group form-control" %>
@@ -10,10 +12,8 @@
   <%= f.input :photo, class: "form-group help-block"  %>
   <%= f.input :photo_cache, as: :hidden, class: "form-group help-block" %>
 
-
-
-
-
   <%= f.submit%>
 
 <%end%>
+</div>
+</div>
